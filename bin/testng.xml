@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="TestNG" verbose="1" parallel="false" thread-count="2"  data-provider-thread-count="3">
+
+<parameter name="browser" value="firefox"/>
+<parameter name="siteURL" value="http://127.0.0.1/orangehrm-3.0.1/symfony/web/index.php/auth/login"/>
+  <test name="Regression" >
+    <classes>
+      <class name="com.tests.CreateAndVerifyUser" />
+    </classes>
+  </test>
+
+  
+</suite>

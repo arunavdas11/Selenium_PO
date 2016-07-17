@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [TestNG]" data-provider-thread-count="3">
+  <parameter name="siteURL" value="http://127.0.0.1/orangehrm-3.0.1/symfony/web/index.php/auth/login"/>
+  <parameter name="browser" value="firefox"/>
+  <test name="Regression(failed)">
+    <classes>
+      <class name="com.tests.CreateAndVerifyUser">
+        <methods>
+          <include name="setUp"/>
+          <include name="VerifyAddNewEmployee" invocation-numbers="0"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.tests.CreateAndVerifyUser -->
+    </classes>
+  </test> <!-- Regression(failed) -->
+</suite> <!-- Failed suite [TestNG] -->
